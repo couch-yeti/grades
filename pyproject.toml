@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "grades"
+version = "0.1.0"
+description = ""
+authors = ["couch-yeti <ericwb52@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+fastapi = "~0.110.2"
+mangum = "~0.17.0"
+pydantic = "~2.7.1"
+sagemaker = "~2.217.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "~24.4.0"
+aws-cdk-aws-sagemaker-alpha = "~2.139.0a0"
+aws-cdk-lib = "~2.139.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
